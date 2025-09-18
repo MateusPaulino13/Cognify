@@ -1,4 +1,4 @@
-namespace Cognify.Models
+namespace Cognify.Models.ViewModel
 {
     public class ErrorViewModel
     {

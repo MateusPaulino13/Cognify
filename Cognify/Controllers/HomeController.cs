@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Cognify.Models;
+using Cognify.Models.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cognify.Controllers

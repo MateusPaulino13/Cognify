@@ -12,9 +12,9 @@ namespace Cognify
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            //builder.Services.AddDbContext<DataBaseContext>(options =>
-            //    options.UseMySql(builder.Configuration.GetConnectionString("Crud_MVCContext"))
-            //);
+            builder.Services.AddDbContext<DataBaseContext>(options =>
+                options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"))
+            );
 
             var app = builder.Build();
 

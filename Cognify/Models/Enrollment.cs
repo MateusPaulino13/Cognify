@@ -1,7 +1,10 @@
-﻿namespace Cognify.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Cognify.Models
 {
     public class Enrollment
     {
+        [Key]
         public Guid EnrollmentId { get; set; }
         public DateTime EnrollmentDate { get; set; }
         public Student Student { get; set; }

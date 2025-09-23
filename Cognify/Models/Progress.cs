@@ -1,7 +1,10 @@
-﻿namespace Cognify.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Cognify.Models
 {
     public class Progress
     {
+        [Key]
         public Guid ProgressId { get; set; }
         public string StatusProgress { get; set; }
         public DateTime LastUpdate { get; set; }

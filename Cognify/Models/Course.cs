@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Cognify.Models
 {
     public class Course
     {
+        [Key]
         public Guid CourseId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
